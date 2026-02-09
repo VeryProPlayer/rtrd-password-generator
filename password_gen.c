@@ -13,7 +13,7 @@ void generatepassword(int length) {
     int randomIndex = rand() % (sizeof(charset) - 1);
     password[i] = charset[randomIndex];
   }
-  password[length] = '\0'; // Null terminate
+  password[length] = '\0'; 
   printf("Password: %s\n", password);
 }
 
@@ -21,6 +21,6 @@ int main() {
   int len;
   printf("Enter the length of the password : ");
   scanf("%d", &len);
-  generatepassword(len);
+  generatepassword(len); //initialization of the function.
   return 0;
 }
